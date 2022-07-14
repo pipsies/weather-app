@@ -11,6 +11,7 @@ body {
 }
 
 
+
 .left-info {
     display: inline-block;
     font-family: u.$font;
@@ -73,7 +74,7 @@ div.weather-info {
     .week-forecast-header {
 
         margin-left: u.em(35);
-        margin-bottom: u.em(45);
+        margin-bottom: u.em(55);
         color: white;
 
 
@@ -128,18 +129,19 @@ div.weather-info {
 
 
     .graph {
-        padding-bottom: u.em(10);
+        padding-bottom: u.em(30);
         border-bottom-style: solid;
         border-bottom-width: u.em(1);
         border-bottom-color: hsla(0, 0%, 100%, 0.64);
-        padding-left: u.em(35);
+        padding-left: u.em(20);
 
     
         
         .city-name, h1 {
             color: white;
-            margin-top: u.em(30);
+            margin-top: u.em(20);
             margin-bottom: 0;
+            font-size: u.em(50);
         }
 
         .current-temp {
@@ -147,7 +149,7 @@ div.weather-info {
             margin-top: 0;
             opacity: 0.7;
             font-weight: 100;
-            font-size: u.em(15);
+            font-size: u.em(20);
             
         }
     }
@@ -177,10 +179,10 @@ div.weather-info {
 
             display: flex;
             justify-content: space-between;
-            margin-top: u.em(30);
+            margin-top: u.em(62);
             padding-right: u.em(30);
             padding-left: u.em(30);
-            margin-bottom: u.em(30);
+            margin-bottom: u.em(60);
 
             li {
 
@@ -210,7 +212,7 @@ div.weather-info {
            
            border: none;
            color: white;
-           height: u.em(50);
+           height: u.em(65);
            padding: 0;
            
         }
@@ -240,3 +242,6 @@ div.weather-info {
     .weather-info { display: block; }  
   }
 
+  @media screen and (min-height: 0px) and (max-height: 600) {
+    .weather-info { display: block; }  
+  }

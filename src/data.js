@@ -2,46 +2,46 @@ export const weatherData = [
 
     {
         id: 1,
-        day: ('Friday'),
+        day: ('10:00'),
         weather: 24,
 
     }, 
 
     {
         id: 2,
-        day: ('Saturday'),
+        day: ('11:00'),
         weather: 26,
     }, 
     
     {
         id: 3,
-        day: ('Sunday'),
+        day: ('12:00'),
         weather: 30,
     }, 
 
     {
         id: 4,
-        day: ('Monday'),
+        day: ('13:00'),
         weather: 37,
     }, 
 
     {
         id: 5,
-        day: ('Tuesday'),
+        day: ('14:00'),
         weather: 36,
     }, 
 
 
     {
         id: 6,
-        day: ('Wednesday'),
+        day: ('15:00'),
         weather: 21,
     }, 
 
     {
         id: 7,
-        day: ('Thursday'),
-        weather: 25,
+        day: ('16:00'),
+        weather: (25),
     }, 
 ]
 

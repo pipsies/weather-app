@@ -61,12 +61,24 @@ const [WeatherData, setWeatherData] = useState({
   }]
 })
 
+
+
+  
+
 const options = {
   plugins: {
     legend: {
       display: false,
     },
   },
+  scales: {
+    y: {
+        suggestedMin: 50,
+        suggestedMax: 38, 
+    }, 
+
+
+}
 };
 
 
@@ -177,7 +189,7 @@ const options = {
               </div>
 
             <div className='arrow-buttons'>
-              <button className='nz'>North Zone</button>
+              <button className='nz'>East London</button>
               <button className='nl'> North London </button>
             </div>
 
