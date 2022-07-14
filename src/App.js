@@ -37,8 +37,7 @@ const App = () => {
         let getsmalldate = smalldate.toDateString();
         document.getElementById("mini-date").innerHTML = getsmalldate;
 
-        //math round temp
-       document.getElementById("current-temp").innerHTML = Math.round(data.current.temp);
+       
        
        
         
@@ -72,6 +71,7 @@ const options = {
 
 
 
+
   return (
   <div>
 
@@ -84,7 +84,7 @@ const options = {
  
 
        { data.current ? <h1 
-       id='current-temp'>{data.current.temp}</h1> : null }
+       id='current-temp'>{data.current.temp}&#8451;</h1> : null }
        
       
     
@@ -123,7 +123,7 @@ const options = {
 
               <div className='graph' >
                 <h1 className='city-name'>London</h1>
-                {data.current ?<p className='current-temp'>{data.current.temp}</p> :null}
+                {data.current ?<p className='current-temp'>{data.current.temp}&#8451;</p> :null}
 
                 <LineChart chartdata={WeatherData} options={options}/>
 
@@ -138,37 +138,37 @@ const options = {
 
               <div className='seven-forecast'>
                 <ul>
-                   <li id='day'>Fri
+                   <li id='day'><p>Fri</p>
                      <img id='img1' src='http://openweathermap.org/img/wn/04d@2x.png' width="50" height="50" ></img>
                      {data.daily ? <p>{data.daily[1].temp.day}&#8451;</p> :null}
                     </li> 
 
-                  <li id='day'>Sat
+                  <li id='day'><p>Sat</p>
                   <img id='img2'  src='http://openweathermap.org/img/wn/04d@2x.png' width="50" height="50" ></img>
                   { data.daily ? <p id='day-temp'>{data.daily[2].temp.day}&#8451;</p> : null}
                   </li>
 
-                  <li id='day'>Sun
+                  <li id='day'><p>Sun</p>
                     <img id='img3' src='http://openweathermap.org/img/wn/04d@2x.png' width="50" height="50" ></img>
                     {data.daily ? <p id='day-temp'>{data.daily[3].temp.day}&#8451;</p> :null}
                     </li>
 
-                  <li id='day'>Mon
+                  <li id='day'><p>Mon</p>
                     <img id='img4' src='http://openweathermap.org/img/wn/03d@2x.png' width="50" height="50" ></img>
                     {data.daily ? <p id='day-temp'>{data.daily[4].temp.day}&#8451;</p>:null}
                     </li> 
 
-                  <li id='day'>Tue
+                  <li id='day'><p>Tue</p>
                     <img id='img5' src='http://openweathermap.org/img/wn/10d@2x.png' width="50" height="50" ></img>
                     {data.daily ? <p id='day-temp'>{data.daily[5].temp.day}&#8451;</p>:null}
                     </li>
 
-                  <li id='day'>Wed
+                  <li id='day'><p>Wed</p>
                     <img id='img6' src='http://openweathermap.org/img/wn/02d@2x.png' width="50" height="50" ></img>
                     {data.daily ? <p>{data.daily[6].temp.day}</p>:null}
                     </li>
 
-                  <li id='day'>Thu
+                  <li id='day'><p>Thu</p>
                   <img id='img7' src='http://openweathermap.org/img/wn/03d@2x.png' width="50" height="50" ></img>
                   {data.daily ? <p>{data.daily[7].temp.day}</p>:null}
                     </li>
@@ -178,10 +178,7 @@ const options = {
 
             <div className='arrow-buttons'>
               <button className='nz'>North Zone</button>
-              <button className='nl'>
-               
-              North London
-                </button>
+              <button className='nl'> North London </button>
             </div>
 
             </div>

@@ -3,7 +3,9 @@
 body {
     background-image: url('/images/London1.jpg');
     background-size: cover;
-    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow:hidden;
     margin: 0;
 
 }
@@ -87,7 +89,7 @@ div.weather-info {
             color: white;
             opacity: 0.6;
             font-weight: 100;
-            margin-bottom: u.em(60);
+            margin-bottom: u.em(20);
         }
        
 
@@ -126,7 +128,7 @@ div.weather-info {
 
 
     .graph {
-        padding-bottom: u.em(70);
+        padding-bottom: u.em(10);
         border-bottom-style: solid;
         border-bottom-width: u.em(1);
         border-bottom-color: hsla(0, 0%, 100%, 0.64);
@@ -154,7 +156,9 @@ div.weather-info {
 
     .seven-forecast {
         
-        
+       
+    
+
         #img {
             width: u.em(50);
             height: u.em(50);
@@ -173,10 +177,10 @@ div.weather-info {
 
             display: flex;
             justify-content: space-between;
-            margin-top: u.em(60);
+            margin-top: u.em(30);
             padding-right: u.em(30);
             padding-left: u.em(30);
-            margin-bottom: u.em(90);
+            margin-bottom: u.em(30);
 
             li {
 
@@ -220,9 +224,19 @@ div.weather-info {
             
             background-color: rgba(152, 152, 152, 0.335);
             width: u.em(410);
+            
         
         }
     }
 
 }
+@media only screen and (max-width: 800px) { 
+    .left-info { 
+      display: none; 
+    } 
+  }
+
+  @media screen and (min-width: 0px) and (max-width: 600) {
+    .weather-info { display: block; }  
+  }
 

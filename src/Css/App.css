@@ -1,6 +1,8 @@
 body {
   background-image: url("/images/London1.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   overflow: hidden;
   margin: 0;
 }
@@ -68,7 +70,7 @@ div.weather-info .week-forecast-header #mini-date {
   color: white;
   opacity: 0.6;
   font-weight: 100;
-  margin-bottom: 3.75em;
+  margin-bottom: 1.25em;
 }
 div.weather-info .buttons {
   display: flex;
@@ -92,7 +94,7 @@ div.weather-info .buttons .wind {
   margin-right: 5em;
 }
 div.weather-info .graph {
-  padding-bottom: 4.375em;
+  padding-bottom: 0.625em;
   border-bottom-style: solid;
   border-bottom-width: 0.0625em;
   border-bottom-color: hsla(0deg, 0%, 100%, 0.64);
@@ -122,10 +124,10 @@ div.weather-info .seven-forecast #day {
 div.weather-info .seven-forecast ul {
   display: flex;
   justify-content: space-between;
-  margin-top: 3.75em;
+  margin-top: 1.875em;
   padding-right: 1.875em;
   padding-left: 1.875em;
-  margin-bottom: 5.625em;
+  margin-bottom: 1.875em;
 }
 div.weather-info .seven-forecast ul li {
   color: white;
@@ -155,4 +157,15 @@ div.weather-info .arrow-buttons button.nz {
 div.weather-info .arrow-buttons button.nl {
   background-color: rgba(152, 152, 152, 0.335);
   width: 25.625em;
+}
+
+@media only screen and (max-width: 800px) {
+  .left-info {
+    display: none;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 600) {
+  .weather-info {
+    display: block;
+  }
 }
