@@ -22,7 +22,7 @@ body {
 .left-info .location-info {
   color: white;
 }
-.left-info .current-temp {
+.left-info #current-temp {
   font-size: 9.375em;
   margin-bottom: 0;
 }
@@ -117,6 +117,7 @@ div.weather-info .seven-forecast #img {
 div.weather-info .seven-forecast #day {
   width: 3.125em;
   height: 8.125em;
+  margin-bottom: 1.25em;
 }
 div.weather-info .seven-forecast ul {
   display: flex;
