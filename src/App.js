@@ -165,12 +165,12 @@ const options = {
 
                   <li id='day'><p>Wed</p>
                     <img id='img6' src='http://openweathermap.org/img/wn/02d@2x.png' width="50" height="50" ></img>
-                    {data.daily ? <p>{data.daily[6].temp.day}</p>:null}
+                    {data.daily ? <p>{data.daily[6].temp.day}&#8451;</p>:null}
                     </li>
 
                   <li id='day'><p>Thu</p>
                   <img id='img7' src='http://openweathermap.org/img/wn/03d@2x.png' width="50" height="50" ></img>
-                  {data.daily ? <p>{data.daily[7].temp.day}</p>:null}
+                  {data.daily ? <p>{data.daily[7].temp.day}&#8451;</p>:null}
                     </li>
                 </ul>
                 
