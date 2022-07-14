@@ -34,13 +34,13 @@ export const weatherData = [
 
     {
         id: 6,
-        day: 20,
+        day: ('Wednesday'),
         weather: 21,
     }, 
 
     {
         id: 7,
-        day: 21,
+        day: ('Thursday'),
         weather: 25,
     }, 
 ]

@@ -68,6 +68,7 @@ div.weather-info .week-forecast-header #mini-date {
   color: white;
   opacity: 0.6;
   font-weight: 100;
+  margin-bottom: 3.75em;
 }
 div.weather-info .buttons {
   display: flex;
@@ -97,9 +98,6 @@ div.weather-info .graph {
   border-bottom-color: hsla(0deg, 0%, 100%, 0.64);
   padding-left: 2.1875em;
 }
-div.weather-info .graph canvas {
-  width: 37.5em;
-}
 div.weather-info .graph .city-name, div.weather-info .graph h1 {
   color: white;
   margin-top: 1.875em;
@@ -123,9 +121,10 @@ div.weather-info .seven-forecast #day {
 div.weather-info .seven-forecast ul {
   display: flex;
   justify-content: space-between;
-  margin-top: 1.875em;
-  margin-right: 1.875em;
+  margin-top: 3.75em;
+  padding-right: 1.875em;
   padding-left: 1.875em;
+  margin-bottom: 5.625em;
 }
 div.weather-info .seven-forecast ul li {
   color: white;

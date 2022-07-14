@@ -87,6 +87,7 @@ div.weather-info {
             color: white;
             opacity: 0.6;
             font-weight: 100;
+            margin-bottom: u.em(60);
         }
        
 
@@ -131,9 +132,7 @@ div.weather-info {
         border-bottom-color: hsla(0, 0%, 100%, 0.64);
         padding-left: u.em(35);
 
-        canvas {
-            width: u.em(600);
-            }
+    
         
         .city-name, h1 {
             color: white;
@@ -173,9 +172,10 @@ div.weather-info {
 
             display: flex;
             justify-content: space-between;
-            margin-top: u.em(30);
-            margin-right: u.em(30);
+            margin-top: u.em(60);
+            padding-right: u.em(30);
             padding-left: u.em(30);
+            margin-bottom: u.em(90);
 
             li {
 

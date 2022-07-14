@@ -3,11 +3,11 @@ import './Sass/App.scss';
 import axios from 'axios';
 import LineChart from './components/LineChart';
 import {weatherData} from './data';
+import { Line } from 'react-chartjs-2';
 
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
-<a href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Freepik - Flaticon</a>
 </style>
 
 
@@ -45,14 +45,23 @@ const App = () => {
 const [WeatherData, setWeatherData] = useState({
   labels: weatherData.map((data) => data.day), 
   datasets: [{
-    label: "Daily Temperature",
+    label: ["Daily Temperature"],
     data: weatherData.map((data) => data.weather),
     backgroundColor: ["white"],
     borderColor: ["#ffffff4d"],
     borderJoinStyle: ["bevel"],
     tension: ["0.4"]
+ 
   }]
 })
+
+const options = {
+  plugins: {
+    legend: {
+      display: false,
+    },
+  },
+};
 
 
 
@@ -103,11 +112,11 @@ const [WeatherData, setWeatherData] = useState({
 
 
 
-              <div className='graph'style={{width: 500}} >
+              <div className='graph' >
                 <h1 className='city-name'>London</h1>
                 {data.current ?<p className='current-temp'>{data.current.temp}&#8451;</p> :null}
 
-                <LineChart chartdata={WeatherData}/>
+                <LineChart chartdata={WeatherData} options={options}/>
 
 
 
@@ -161,7 +170,7 @@ const [WeatherData, setWeatherData] = useState({
               <button className='nz'>North Zone</button>
               <button className='nl'>
                
-                <img className='r-arrow' url="src/images/right-arrow.png"></img>
+              North London
                 </button>
             </div>
 
