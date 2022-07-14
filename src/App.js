@@ -47,7 +47,10 @@ const [WeatherData, setWeatherData] = useState({
   datasets: [{
     label: "Daily Temperature",
     data: weatherData.map((data) => data.weather),
-    backgroundColor: ["white"]
+    backgroundColor: ["white"],
+    borderColor: ["#ffffff4d"],
+    borderJoinStyle: ["bevel"],
+    tension: ["0.4"]
   }]
 })
 
