@@ -1,0 +1,227 @@
+@use './util/' as u;
+
+body {
+    background-image: url('/images/London1.jpg');
+    background-size: cover;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+
+.left-info {
+    display: inline-block;
+    font-family: u.$font;
+    margin-left: u.em(55);
+
+    .IMN {
+        color: white;
+        font-family: u.$font;
+        font-weight: 500;
+        margin-top: u.em(30);
+        width: u.em(50);
+        display: inline-block;
+        margin-bottom: u.em(250);
+    
+    }
+
+    .location-info {
+        color: white;
+    }
+    
+    .current-temp {
+        font-size: u.em(150);
+        margin-bottom: 0;
+    }
+
+    .current-city {
+        font-size: u.em(80);
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-top: u.em(-2);
+    }
+    .country {
+        margin-bottom: u.em(70);
+        margin-top: u.em(-3);
+        opacity: 0.8;
+    }
+
+    #date-time {
+        margin-top: 0;
+        opacity: 0.6;
+        font-weight: 100;
+        font-size: u.em(15);
+        
+    }
+}
+
+
+
+
+
+div.weather-info {
+    font-family: u.$font;
+    background-color: black;
+    height: 100vh;
+    width: u.em(550);
+    float: right;
+    background: rgba(0, 0, 0, 0.6);
+
+
+    .week-forecast-header {
+
+        margin-left: u.em(35);
+        margin-bottom: u.em(45);
+        color: white;
+
+
+            .weather-title {
+                color: white;
+                font-weight: 400;
+                margin-bottom: 0;
+                font-size: u.em(20);
+                margin-top: u.em(45);
+            }
+
+        #mini-date {
+            color: white;
+            opacity: 0.6;
+            font-weight: 100;
+        }
+       
+
+
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-basis: 0;
+        color: white;
+        border-bottom-style: solid;
+        border-bottom-width: u.em(1);
+        border-bottom-color: hsla(0, 0%, 100%, 0.64);
+        
+        
+        p {
+            margin-left: u.em(35);
+            opacity: 0.7;
+            font-weight: 100;
+            margin-right: u.em(70);
+            margin-bottom: u.em(10);
+            font-size: u.em(14);
+            
+        }
+
+        .wind {
+            margin-right: u.em(80);
+        }
+       
+    }
+   
+
+
+
+
+    .graph {
+        padding-bottom: u.em(70);
+        border-bottom-style: solid;
+        border-bottom-width: u.em(1);
+        border-bottom-color: hsla(0, 0%, 100%, 0.64);
+        padding-left: u.em(35);
+
+        canvas {
+            width: u.em(600);
+            }
+        
+        .city-name, h1 {
+            color: white;
+            margin-top: u.em(30);
+            margin-bottom: 0;
+        }
+
+        .current-temp {
+            color: white;
+            margin-top: 0;
+            opacity: 0.7;
+            font-weight: 100;
+            font-size: u.em(15);
+            
+        }
+    }
+
+
+
+    .seven-forecast {
+        
+        
+        #img {
+            width: u.em(50);
+            height: u.em(50);
+            
+        }
+
+
+            #day {
+                width: u.em(50);
+                height: u.em(130);
+            }
+
+
+        ul {
+
+            display: flex;
+            justify-content: space-between;
+            margin-top: u.em(30);
+            margin-right: u.em(30);
+            padding-left: u.em(30);
+
+            li {
+
+                color: white;
+                opacity: 0.7;
+                list-style: none;
+                font-weight: 100;
+                text-align: center;
+                justify-content: center;
+
+            }
+
+
+        }
+    }
+
+    .arrow-buttons {
+        margin-right: 0;
+        
+       
+.r-arrow {
+    width: u.em(20);
+    height: u.em(20);
+}
+
+        button.nz, button.nl  {
+           
+           border: none;
+           color: white;
+           height: u.em(50);
+           padding: 0;
+           
+        }
+
+        button.nz {
+            width: u.em(250);
+            background-color: rgba(0, 0, 0, 0.6);
+           
+        }
+        button.nl {
+            
+            background-color: rgba(152, 152, 152, 0.335);
+            width: u.em(410);
+        
+        }
+    }
+
+}
+

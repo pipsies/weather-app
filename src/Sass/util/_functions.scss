@@ -1,0 +1,15 @@
+@use 'sass:math';
+
+@function em($pixel) {
+
+    //If pixel has a unit, throw an error , this allows
+    @if math.is-unitless($pixel) {
+        @return math.div($pixel, 16) + em;
+
+    }
+
+    
+    @else { 
+        @error 'Do not use units when using the em() function: only numbers';
+    }
+}
