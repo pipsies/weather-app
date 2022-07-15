@@ -134,7 +134,8 @@ const options = {
 
 
               <div className='graph' >
-                <h1 className='city-name'>London</h1>
+                <h1 className='city-name'>London
+                <img className='burger-icon' src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/000000/external-open-menu-essentials-tanah-basah-basic-outline-tanah-basah.png"/></h1>
                 {data.current ?<p className='current-temp'>{data.current.temp}&#8451;</p> :null}
 
                 <LineChart chartdata={WeatherData} options={options}/>
@@ -190,7 +191,8 @@ const options = {
 
             <div className='arrow-buttons'>
               <button className='nz'>East London</button>
-              <button className='nl'> North London </button>
+              <button className='nl'> North London 
+              </button>
             </div>
 
             </div>

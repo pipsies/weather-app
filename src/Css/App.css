@@ -100,6 +100,9 @@ div.weather-info .graph {
   border-bottom-color: hsla(0deg, 0%, 100%, 0.64);
   padding-left: 1.25em;
 }
+div.weather-info .graph .burger-icon {
+  padding-left: 5em;
+}
 div.weather-info .graph .city-name, div.weather-info .graph h1 {
   color: white;
   margin-top: 1.25em;
