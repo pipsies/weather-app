@@ -4,6 +4,8 @@ import axios from 'axios';
 import LineChart from './components/LineChart';
 import {weatherData} from './data';
 import { Line } from 'react-chartjs-2';
+import { Color } from 'three';
+import { without } from 'lodash';
 
 
 <style>
@@ -135,7 +137,7 @@ const options = {
 
               <div className='graph' >
                 <h1 className='city-name'>London
-                <img className='burger-icon' src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/000000/external-open-menu-essentials-tanah-basah-basic-outline-tanah-basah.png"/></h1>
+                <img className='burger-icon' src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/FFFFFF/external-open-menu-essentials-tanah-basah-basic-outline-tanah-basah.png"/></h1>
                 {data.current ?<p className='current-temp'>{data.current.temp}&#8451;</p> :null}
 
                 <LineChart chartdata={WeatherData} options={options}/>

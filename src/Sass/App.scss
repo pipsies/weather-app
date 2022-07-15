@@ -92,9 +92,6 @@ div.weather-info {
             font-weight: 100;
             margin-bottom: u.em(20);
         }
-       
-
-
     }
 
     .buttons {
@@ -208,12 +205,13 @@ div.weather-info {
 
     .arrow-buttons {
         margin-right: 0;
+
         
        
-.r-arrow {
-    width: u.em(20);
-    height: u.em(20);
-}
+        .r-arrow {
+            width: u.em(20);
+            height: u.em(20);
+        }
 
         button.nz, button.nl  {
            
