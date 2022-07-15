@@ -6,8 +6,6 @@ import {weatherData} from './data';
 import { Line } from 'react-chartjs-2';
 import { Color } from 'three';
 import { without } from 'lodash';
-
-
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
 </style>
@@ -16,7 +14,6 @@ import { without } from 'lodash';
 
 
 const App = () => {
-
 
   const [data, setData] = useState({})
  
@@ -37,13 +34,7 @@ const App = () => {
         //mini date
         const smalldate = new Date();
         let getsmalldate = smalldate.toDateString();
-        document.getElementById("mini-date").innerHTML = getsmalldate;
-
-       
-       
-       
-        
-
+        document.getElementById("mini-date").innerHTML = getsmalldate;        
       
       
     })
@@ -63,10 +54,6 @@ const [WeatherData, setWeatherData] = useState({
   }]
 })
 
-
-
-  
-
 const options = {
   plugins: {
     legend: {
@@ -78,8 +65,6 @@ const options = {
         suggestedMin: 50,
         suggestedMax: 38, 
     }, 
-
-
 }
 };
 
@@ -87,18 +72,23 @@ const options = {
 
 
   return (
+
+
   <div>
 
 <div className='left-info'>
 
-          <div className='IMN'>
-          <h1>IMN</h1>
+          <div>
+          <h1 className='IMN'>IMN <img className='imn-icon' src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/FFFFFF/external-open-menu-essentials-tanah-basah-basic-outline-tanah-basah.png"/></h1>
           </div> 
           <div className='location-info'> 
  
-
+      <div className='first-data-temp'>
        { data.current ? <h1 
-       id='current-temp'>{data.current.temp}&#8451;</h1> : null }
+       id='current-temp'>{data.current.temp} &#8451;</h1>
+        : null } 
+      
+       </div>
        
       
     
@@ -155,7 +145,7 @@ const options = {
                 <ul>
                    <li id='day'><p>Fri</p>
                      <img id='img1' src='http://openweathermap.org/img/wn/04d@2x.png' width="50" height="50" ></img>
-                     {data.daily ? <p>{data.daily[1].temp.day}&#8451;</p> :null}
+                     {data.daily ? <p id='day-temp'>{data.daily[1].temp.day}&#8451;</p> :null}
                     </li> 
 
                   <li id='day'><p>Sat</p>
@@ -165,7 +155,7 @@ const options = {
 
                   <li id='day'><p>Sun</p>
                     <img id='img3' src='http://openweathermap.org/img/wn/04d@2x.png' width="50" height="50" ></img>
-                    {data.daily ? <p id='day-temp'>{data.daily[3].temp.day}&#8451;</p> :null}
+                    {data.daily ? <p id='day-temp'>{data.daily[3].temp.day}</p> :null}
                     </li>
 
                   <li id='day'><p>Mon</p>
@@ -180,12 +170,12 @@ const options = {
 
                   <li id='day'><p>Wed</p>
                     <img id='img6' src='http://openweathermap.org/img/wn/02d@2x.png' width="50" height="50" ></img>
-                    {data.daily ? <p>{data.daily[6].temp.day}&#8451;</p>:null}
+                    {data.daily ? <p id='day-temp'>{data.daily[6].temp.day}&#8451;</p>:null}
                     </li>
 
                   <li id='day'><p>Thu</p>
                   <img id='img7' src='http://openweathermap.org/img/wn/03d@2x.png' width="50" height="50" ></img>
-                  {data.daily ? <p>{data.daily[7].temp.day}&#8451;</p>:null}
+                  {data.daily ? <p id='day-temp'>{data.daily[7].temp.day}&#8451;</p>:null}
                     </li>
                 </ul>
                 

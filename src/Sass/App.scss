@@ -16,6 +16,10 @@ body {
     display: inline-block;
     font-family: u.$font;
     margin-left: u.em(55);
+    width: u.em(600);
+
+
+
 
     .IMN {
         color: white;
@@ -23,8 +27,8 @@ body {
         font-weight: 500;
         margin-top: u.em(30);
         width: u.em(50);
-        display: inline-block;
-        margin-bottom: u.em(250);
+        //display: flex;
+        margin-bottom: u.em(150);
     
     }
 
@@ -55,6 +59,18 @@ body {
         font-weight: 100;
         font-size: u.em(15);
         
+    }
+
+
+    .first-data-temp {
+        display: flex;
+
+
+       img.celc {
+        height: u.em(50);
+        width: u.em(50);
+        margin-top: u.em(100);
+       }
     }
 }
 
@@ -121,7 +137,7 @@ div.weather-info {
        
     }
    
-
+ 
 
 
 
@@ -135,7 +151,7 @@ div.weather-info {
 
         .burger-icon {
              
-            padding-left: u.em(80);
+            padding-left: u.em(105);
         
         }
 
@@ -163,7 +179,9 @@ div.weather-info {
     .seven-forecast {
         
        
-    
+        p#day-temp {
+            font-size: u.em(10);
+        }
 
         #img {
             width: u.em(50);

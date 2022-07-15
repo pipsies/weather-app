@@ -11,6 +11,7 @@ body {
   display: inline-block;
   font-family: "Roboto", sans-serif;
   margin-left: 3.4375em;
+  width: 37.5em;
 }
 .left-info .IMN {
   color: white;
@@ -18,8 +19,7 @@ body {
   font-weight: 500;
   margin-top: 1.875em;
   width: 3.125em;
-  display: inline-block;
-  margin-bottom: 15.625em;
+  margin-bottom: 9.375em;
 }
 .left-info .location-info {
   color: white;
@@ -44,6 +44,14 @@ body {
   opacity: 0.6;
   font-weight: 100;
   font-size: 0.9375em;
+}
+.left-info .first-data-temp {
+  display: flex;
+}
+.left-info .first-data-temp img.celc {
+  height: 3.125em;
+  width: 3.125em;
+  margin-top: 6.25em;
 }
 
 div.weather-info {
@@ -101,7 +109,7 @@ div.weather-info .graph {
   padding-left: 1.25em;
 }
 div.weather-info .graph .burger-icon {
-  padding-left: 5em;
+  padding-left: 6.5625em;
 }
 div.weather-info .graph .city-name, div.weather-info .graph h1 {
   color: white;
@@ -115,6 +123,9 @@ div.weather-info .graph .current-temp {
   opacity: 0.7;
   font-weight: 100;
   font-size: 1.25em;
+}
+div.weather-info .seven-forecast p#day-temp {
+  font-size: 0.625em;
 }
 div.weather-info .seven-forecast #img {
   width: 3.125em;
