@@ -165,27 +165,29 @@ const options = {
                   {data.daily ? <p id='day-temp'>{data.daily[7].temp.min.toFixed()} - {data.daily[7].temp.max.toFixed()}&#8451;</p>:null}
                     </li>
                 </ul>
+
+                <div className='arrow-buttons'>
+
+
+                    <button className='nz'>
+                    <img className='left-arrow' src="https://img.icons8.com/fluency-systems-regular/24/ecf0f1/long-arrow-left.png"/>
+                    <p className='p-east'>East London</p>
+                    </button>
+
+
+
+                    <button className='nl'> 
+                    <p className='p-north'>North London </p>
+                    <img   className='right-arrow' src="https://img.icons8.com/fluency-systems-regular/24/ecf0f1/long-arrow-right.png"/>
+
+
+                    </button>
+
+                    </div>
                 
               </div>
 
-            <div className='arrow-buttons'>
-
-
-              <button className='nz'>
-              <img className='left-arrow' src="https://img.icons8.com/fluency-systems-regular/24/ecf0f1/long-arrow-left.png"/>
-              <p className='p-east'>East London</p>
-              </button>
-          
-
-
-              <button className='nl'> 
-              <p className='p-north'>North London </p>
-              <img   className='right-arrow' src="https://img.icons8.com/fluency-systems-regular/24/ecf0f1/long-arrow-right.png"/>
-              
-             
-              </button>
-              
-            </div>
+        
 
             </div>
     

@@ -5,11 +5,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    overflow:hidden;
     margin: 0;
-    
-    
+    background-attachment: fixed;
 
+    
 }
 
 
@@ -52,7 +51,7 @@ body {
     }
 
     #dashed-line {
-        opacity: 0.5;
+        opacity: 0.7;
         height: u.em(50);
     }
 
@@ -105,7 +104,7 @@ body {
 div.weather-info {
     font-family: u.$font;
     background-color: black;
-    height: 100vh;
+    height: u.em(900);
     width: u.em(550);
     float: right;
     background: rgba(0, 0, 0, 0.6);
@@ -214,6 +213,7 @@ div.weather-info {
     .seven-forecast {
         
         font-family: u.$font;
+        
 
         p#day-temp {
             font-size: u.em(11);
@@ -236,7 +236,7 @@ div.weather-info {
             margin-top: u.em(60);
             padding-right: u.em(30);
             padding-left: u.em(30);
-            margin-bottom: u.em(41);
+            margin-bottom: u.em(28);
             
 
             li {
@@ -258,11 +258,13 @@ div.weather-info {
 
 
         }
-    }
+
+
 
     .arrow-buttons {
         margin-right: 0;
        
+    
         p.p-east {
           
             margin-left: u.em(30);
@@ -295,9 +297,10 @@ div.weather-info {
            
            border: none;
            color: white;
-           height: u.em(65);
+           height: u.em(81);
            padding: 0;
            cursor: pointer;
+
            
            
         }
@@ -309,7 +312,7 @@ div.weather-info {
         }
         button.nl {
             
-            background-color: rgba(152, 152, 152, 0.175);
+            background-color: rgba(52, 50, 50, 0.758);
             width: u.em(410);
             
         
@@ -317,6 +320,11 @@ div.weather-info {
     }
 
 }
+
+
+
+    }
+
 @media only screen and (max-width: 800px) { 
     .left-info { 
       display: none; 
@@ -327,6 +335,4 @@ div.weather-info {
     .weather-info { display: block; }  
   }
 
-  @media screen and (min-height: 0px) and (max-height: 600) {
-    .weather-info { display: block; }  
-  }
+ 
