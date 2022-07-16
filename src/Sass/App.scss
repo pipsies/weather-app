@@ -23,7 +23,7 @@ body {
    
 
     div.IMN {
-
+            
         
 
 
@@ -32,16 +32,15 @@ body {
             font-family: u.$font;
             font-weight: 500;
             margin-top: u.em(30);
-            width: u.em(550);
+            width: u.em(300);
             margin-bottom: u.em(180);
-            
-            
-            
+        
           
             
                 img.imn-icon {
-                    margin-left: u.em(500);
+                    margin-left: u.em(600);
                     cursor: pointer;
+                    block-size: fit-content;
                     
                    
                 }

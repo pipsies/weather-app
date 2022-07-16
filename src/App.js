@@ -82,7 +82,7 @@ const options = {
 
           <div className='IMN'>
           <h1 className='IMN-header'> IMN 
-          <img className='imn-icon' src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/FFFFFF/external-open-menu-essentials-tanah-basah-basic-outline-tanah-basah.png"/></h1>
+          <img className='imn-icon' src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/40/FFFFFF/external-open-menu-essentials-tanah-basah-basic-outline-tanah-basah.png"/></h1>
           </div>
           
        <div className='location-info'> 
