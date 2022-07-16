@@ -21,6 +21,7 @@ const App = () => {
 
   
     //fetching api url
+
     useEffect(() => {
       axios.get(url).then((response) => {
         setData(response.data)
@@ -35,14 +36,13 @@ const App = () => {
         const smalldate = new Date();
         let getsmalldate = smalldate.toDateString();
         document.getElementById("mini-date").innerHTML = getsmalldate;      
-        
-  
-      
       
     })
     }, []);
     
 
+
+// data for graph
 const [WeatherData, setWeatherData] = useState({
   labels: weatherData.map((data) => data.day), 
   datasets: [{
@@ -56,6 +56,8 @@ const [WeatherData, setWeatherData] = useState({
   }]
 })
 
+
+// data for graph
 const options = {
   plugins: {
     legend: {
@@ -74,34 +76,32 @@ const options = {
 
 
   return (
-
-
   <div>
 
 <div className='left-info'>
 
-          
-          <h1 className='IMN'> IMN 
+          <div className='IMN'>
+          <h1 className='IMN-header'> IMN 
           <img className='imn-icon' src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/FFFFFF/external-open-menu-essentials-tanah-basah-basic-outline-tanah-basah.png"/></h1>
+          </div>
           
-          <div className='location-info'> 
- 
+       <div className='location-info'> 
       <div className='first-data-temp'>
+    
        { data.current ? <h1 
        id='current-temp'>{data.current.temp.toFixed()}&#8451;</h1>
         : null }
        </div>
        
-      
     
-       <p className='current-city'>London
-        </p>
+       <p className='current-city'>London</p>
        <p className='country'>United Kingdom, {data.timezone}</p>
-        
-       <p id='date-time'></p> 
-    
+       <p id='date-time'></p>
+       <img id='dashed-line' src="https://img.icons8.com/ios-glyphs/90/FFFFFF/dashed-line.png"/>
        
        </div>
+
+
 </div>
 
 
@@ -109,37 +109,22 @@ const options = {
 
             <div className='week-forecast-header'>
               <p className='weather-title'>7 Day Regional Weather Forecast</p>
-
-              <p id='mini-date'>
-              
-              </p>
-              
+              <p id='mini-date'></p>
               </div>
 
               <div className='buttons'>
-                <p>Temperature</p>
+                <p id='temp-btn'>Temperature</p>
                 <p>Percipitation</p>
                 <p className='wind'>Wind</p>
               </div>
             
 
-
-
-
-
               <div className='graph'>
-                <h1 className='city-name'>London
+                <h1 className='city-name'>Soho
                 <img className='burger-icon' src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/FFFFFF/external-open-menu-essentials-tanah-basah-basic-outline-tanah-basah.png"/></h1>
                 {data.current ?<p className='current-temp'>{data.current.temp.toFixed()}&#8451;</p> :null}
-
                 <LineChart chartdata={WeatherData} options={options}/>
-
-
-
               </div>
-
-
-
 
 
 
@@ -184,9 +169,22 @@ const options = {
               </div>
 
             <div className='arrow-buttons'>
-              <button className='nz'>East London</button>
-              <button className='nl'> North London 
+
+
+              <button className='nz'>
+              <img className='left-arrow' src="https://img.icons8.com/fluency-systems-regular/24/ecf0f1/long-arrow-left.png"/>
+              <p className='p-east'>East London</p>
               </button>
+          
+
+
+              <button className='nl'> 
+              <p className='p-north'>North London </p>
+              <img   className='right-arrow' src="https://img.icons8.com/fluency-systems-regular/24/ecf0f1/long-arrow-right.png"/>
+              
+             
+              </button>
+              
             </div>
 
             </div>

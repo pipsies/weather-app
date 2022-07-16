@@ -7,6 +7,8 @@ body {
     background-position: center;
     overflow:hidden;
     margin: 0;
+    
+    
 
 }
 
@@ -19,32 +21,48 @@ body {
     width: u.em(500);
     
 
-    img.bar {
-        width: u.em(90);
-    }
-
-
-
-    h1.IMN {
-        color: white;
-        font-family: u.$font;
-        font-weight: 500;
-        margin-top: u.em(30);
-        width: u.em(50);
    
 
-        margin-bottom: u.em(180);
-      
+    div.IMN {
+
         
 
+
+        h1.IMN-header {
+            color: white;
+            font-family: u.$font;
+            font-weight: 500;
+            margin-top: u.em(30);
+            width: u.em(550);
+            margin-bottom: u.em(180);
+            
+            
+            
+          
+            
+                img.imn-icon {
+                    margin-left: u.em(500);
+                    cursor: pointer;
+                    
+                   
+                }
+        
+        }
     
     }
 
+    #dashed-line {
+        opacity: 0.5;
+        height: u.em(50);
+    }
 
-   
 
     .location-info {
         color: white;
+    }
+
+    #dashed-line {
+       width: u.em(60);
     }
     
     #current-temp {
@@ -71,14 +89,12 @@ body {
         font-weight: 100;
         font-size: u.em(15);
         margin-bottom: 0;
+        position: absolute;
         
     }
 
-
     .first-data-temp {
-        display: flex;
-
-
+        display: inline-block;
     }
 }
 
@@ -98,13 +114,13 @@ div.weather-info {
     .week-forecast-header {
 
         margin-left: u.em(35);
-        margin-bottom: u.em(55);
+        margin-bottom: u.em(60);
         color: white;
 
 
             .weather-title {
                 color: white;
-                font-weight: 400;
+                font-weight: 300;
                 margin-bottom: 0;
                 font-size: u.em(20);
                 margin-top: u.em(45);
@@ -126,7 +142,7 @@ div.weather-info {
         color: white;
         border-bottom-style: solid;
         border-bottom-width: u.em(1);
-        border-bottom-color: hsla(0, 0%, 100%, 0.64);
+        border-bottom-color: hsla(0, 0%, 100%, 0.639);
         
         
         p {
@@ -136,6 +152,8 @@ div.weather-info {
             margin-right: u.em(70);
             margin-bottom: u.em(10);
             font-size: u.em(14);
+            cursor: pointer;
+            
             
         }
 
@@ -143,6 +161,14 @@ div.weather-info {
             margin-right: u.em(80);
         }
        
+        #temp-btn{
+            border-bottom-style: solid;
+            padding-bottom: u.em(10);
+            margin-bottom: u.em(-2);
+            border-radius: u.em(1);
+            
+            
+        }
     }
    
  
@@ -152,14 +178,14 @@ div.weather-info {
     .graph {
         padding-bottom: u.em(30);
         border-bottom-style: solid;
-        border-bottom-width: u.em(1);
-        border-bottom-color: hsla(0, 0%, 100%, 0.64);
+        border-bottom-width: u.em(2);
+        border-bottom-color: hsla(0, 0%, 100%, 0.412);
         padding-left: u.em(20);
 
 
         .burger-icon {
-             
-            padding-left: u.em(105);
+            padding-left: u.em(115);
+            cursor: pointer;
         
         }
 
@@ -170,6 +196,7 @@ div.weather-info {
             margin-top: u.em(20);
             margin-bottom: 0;
             font-size: u.em(50);
+            font-weight: 400;
         }
 
         .current-temp {
@@ -186,16 +213,13 @@ div.weather-info {
 
     .seven-forecast {
         
-       
+        font-family: u.$font;
+
         p#day-temp {
-            font-size: u.em(10);
+            font-size: u.em(11);
         }
 
-        #img {
-            width: u.em(50);
-            height: u.em(50);
-            
-        }
+        
 
 
             #day {
@@ -209,10 +233,11 @@ div.weather-info {
 
             display: flex;
             justify-content: space-between;
-            margin-top: u.em(62);
+            margin-top: u.em(60);
             padding-right: u.em(30);
             padding-left: u.em(30);
-            margin-bottom: u.em(60);
+            margin-bottom: u.em(41);
+            
 
             li {
 
@@ -222,7 +247,13 @@ div.weather-info {
                 font-weight: 100;
                 text-align: center;
                 justify-content: center;
+               
 
+            }
+
+            p {
+                font-weight: 500;
+               
             }
 
 
@@ -231,12 +262,33 @@ div.weather-info {
 
     .arrow-buttons {
         margin-right: 0;
+       
+        p.p-east {
+          
+            margin-left: u.em(30);
+        }
 
+        p.p-north {
+            margin-left: u.em(60);
+            margin-right: u.em(20);
+
+        }
+        
+        p {
+            margin: 0;
+            width: u.em(120);
+            text-align: center;
+            align-content: center;
+            display: inline-block;
+            opacity: 0.8;
+            font-weight: 100;
+        }
         
        
-        .r-arrow {
-            width: u.em(20);
-            height: u.em(20);
+        img.right-arrow, img.left-arrow {
+          
+            vertical-align: middle
+        
         }
 
         button.nz, button.nl  {
@@ -245,6 +297,8 @@ div.weather-info {
            color: white;
            height: u.em(65);
            padding: 0;
+           cursor: pointer;
+           
            
         }
 
@@ -255,7 +309,7 @@ div.weather-info {
         }
         button.nl {
             
-            background-color: rgba(152, 152, 152, 0.335);
+            background-color: rgba(152, 152, 152, 0.175);
             width: u.em(410);
             
         

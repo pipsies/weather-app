@@ -9,23 +9,31 @@ body {
 
 .left-info {
   display: inline-block;
-  font-family: "Roboto", sans-serif;
+  font-family: "Albert Sans", sans-serif;
   margin-left: 3.4375em;
   width: 31.25em;
 }
-.left-info img.bar {
-  width: 5.625em;
-}
-.left-info h1.IMN {
+.left-info div.IMN h1.IMN-header {
   color: white;
-  font-family: "Roboto", sans-serif;
+  font-family: "Albert Sans", sans-serif;
   font-weight: 500;
   margin-top: 1.875em;
-  width: 3.125em;
+  width: 34.375em;
   margin-bottom: 11.25em;
+}
+.left-info div.IMN h1.IMN-header img.imn-icon {
+  margin-left: 31.25em;
+  cursor: pointer;
+}
+.left-info #dashed-line {
+  opacity: 0.5;
+  height: 3.125em;
 }
 .left-info .location-info {
   color: white;
+}
+.left-info #dashed-line {
+  width: 3.75em;
 }
 .left-info #current-temp {
   font-size: 7.5em;
@@ -48,13 +56,14 @@ body {
   font-weight: 100;
   font-size: 0.9375em;
   margin-bottom: 0;
+  position: absolute;
 }
 .left-info .first-data-temp {
-  display: flex;
+  display: inline-block;
 }
 
 div.weather-info {
-  font-family: "Roboto", sans-serif;
+  font-family: "Albert Sans", sans-serif;
   background-color: black;
   height: 100vh;
   width: 34.375em;
@@ -63,12 +72,12 @@ div.weather-info {
 }
 div.weather-info .week-forecast-header {
   margin-left: 2.1875em;
-  margin-bottom: 3.4375em;
+  margin-bottom: 3.75em;
   color: white;
 }
 div.weather-info .week-forecast-header .weather-title {
   color: white;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 0;
   font-size: 1.25em;
   margin-top: 2.8125em;
@@ -87,7 +96,7 @@ div.weather-info .buttons {
   color: white;
   border-bottom-style: solid;
   border-bottom-width: 0.0625em;
-  border-bottom-color: hsla(0deg, 0%, 100%, 0.64);
+  border-bottom-color: hsla(0deg, 0%, 100%, 0.639);
 }
 div.weather-info .buttons p {
   margin-left: 2.1875em;
@@ -96,25 +105,34 @@ div.weather-info .buttons p {
   margin-right: 4.375em;
   margin-bottom: 0.625em;
   font-size: 0.875em;
+  cursor: pointer;
 }
 div.weather-info .buttons .wind {
   margin-right: 5em;
 }
+div.weather-info .buttons #temp-btn {
+  border-bottom-style: solid;
+  padding-bottom: 0.625em;
+  margin-bottom: -0.125em;
+  border-radius: 0.0625em;
+}
 div.weather-info .graph {
   padding-bottom: 1.875em;
   border-bottom-style: solid;
-  border-bottom-width: 0.0625em;
-  border-bottom-color: hsla(0deg, 0%, 100%, 0.64);
+  border-bottom-width: 0.125em;
+  border-bottom-color: hsla(0deg, 0%, 100%, 0.412);
   padding-left: 1.25em;
 }
 div.weather-info .graph .burger-icon {
-  padding-left: 6.5625em;
+  padding-left: 7.1875em;
+  cursor: pointer;
 }
 div.weather-info .graph .city-name, div.weather-info .graph h1 {
   color: white;
   margin-top: 1.25em;
   margin-bottom: 0;
   font-size: 3.125em;
+  font-weight: 400;
 }
 div.weather-info .graph .current-temp {
   color: white;
@@ -123,12 +141,11 @@ div.weather-info .graph .current-temp {
   font-weight: 100;
   font-size: 1.25em;
 }
-div.weather-info .seven-forecast p#day-temp {
-  font-size: 0.625em;
+div.weather-info .seven-forecast {
+  font-family: "Albert Sans", sans-serif;
 }
-div.weather-info .seven-forecast #img {
-  width: 3.125em;
-  height: 3.125em;
+div.weather-info .seven-forecast p#day-temp {
+  font-size: 0.6875em;
 }
 div.weather-info .seven-forecast #day {
   width: 3.125em;
@@ -138,10 +155,10 @@ div.weather-info .seven-forecast #day {
 div.weather-info .seven-forecast ul {
   display: flex;
   justify-content: space-between;
-  margin-top: 3.875em;
+  margin-top: 3.75em;
   padding-right: 1.875em;
   padding-left: 1.875em;
-  margin-bottom: 3.75em;
+  margin-bottom: 2.5625em;
 }
 div.weather-info .seven-forecast ul li {
   color: white;
@@ -151,25 +168,44 @@ div.weather-info .seven-forecast ul li {
   text-align: center;
   justify-content: center;
 }
+div.weather-info .seven-forecast ul p {
+  font-weight: 500;
+}
 div.weather-info .arrow-buttons {
   margin-right: 0;
 }
-div.weather-info .arrow-buttons .r-arrow {
-  width: 1.25em;
-  height: 1.25em;
+div.weather-info .arrow-buttons p.p-east {
+  margin-left: 1.875em;
+}
+div.weather-info .arrow-buttons p.p-north {
+  margin-left: 3.75em;
+  margin-right: 1.25em;
+}
+div.weather-info .arrow-buttons p {
+  margin: 0;
+  width: 7.5em;
+  text-align: center;
+  align-content: center;
+  display: inline-block;
+  opacity: 0.8;
+  font-weight: 100;
+}
+div.weather-info .arrow-buttons img.right-arrow, div.weather-info .arrow-buttons img.left-arrow {
+  vertical-align: middle;
 }
 div.weather-info .arrow-buttons button.nz, div.weather-info .arrow-buttons button.nl {
   border: none;
   color: white;
   height: 4.0625em;
   padding: 0;
+  cursor: pointer;
 }
 div.weather-info .arrow-buttons button.nz {
   width: 15.625em;
   background-color: rgba(0, 0, 0, 0.6);
 }
 div.weather-info .arrow-buttons button.nl {
-  background-color: rgba(152, 152, 152, 0.335);
+  background-color: rgba(152, 152, 152, 0.175);
   width: 25.625em;
 }
 
