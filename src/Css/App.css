@@ -11,21 +11,24 @@ body {
   display: inline-block;
   font-family: "Roboto", sans-serif;
   margin-left: 3.4375em;
-  width: 37.5em;
+  width: 31.25em;
 }
-.left-info .IMN {
+.left-info img.bar {
+  width: 5.625em;
+}
+.left-info h1.IMN {
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   margin-top: 1.875em;
   width: 3.125em;
-  margin-bottom: 9.375em;
+  margin-bottom: 11.25em;
 }
 .left-info .location-info {
   color: white;
 }
 .left-info #current-temp {
-  font-size: 9.375em;
+  font-size: 7.5em;
   margin-bottom: 0;
 }
 .left-info .current-city {
@@ -35,7 +38,7 @@ body {
   margin-top: -0.125em;
 }
 .left-info .country {
-  margin-bottom: 4.375em;
+  margin-bottom: 6.25em;
   margin-top: -0.1875em;
   opacity: 0.8;
 }
@@ -44,14 +47,10 @@ body {
   opacity: 0.6;
   font-weight: 100;
   font-size: 0.9375em;
+  margin-bottom: 0;
 }
 .left-info .first-data-temp {
   display: flex;
-}
-.left-info .first-data-temp img.celc {
-  height: 3.125em;
-  width: 3.125em;
-  margin-top: 6.25em;
 }
 
 div.weather-info {

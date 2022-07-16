@@ -34,7 +34,9 @@ const App = () => {
         //mini date
         const smalldate = new Date();
         let getsmalldate = smalldate.toDateString();
-        document.getElementById("mini-date").innerHTML = getsmalldate;        
+        document.getElementById("mini-date").innerHTML = getsmalldate;      
+        
+  
       
       
     })
@@ -78,16 +80,16 @@ const options = {
 
 <div className='left-info'>
 
-          <div>
-          <h1 className='IMN'>IMN <img className='imn-icon' src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/FFFFFF/external-open-menu-essentials-tanah-basah-basic-outline-tanah-basah.png"/></h1>
-          </div> 
+          
+          <h1 className='IMN'> IMN 
+          <img className='imn-icon' src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/FFFFFF/external-open-menu-essentials-tanah-basah-basic-outline-tanah-basah.png"/></h1>
+          
           <div className='location-info'> 
  
       <div className='first-data-temp'>
        { data.current ? <h1 
-       id='current-temp'>{data.current.temp} &#8451;</h1>
-        : null } 
-      
+       id='current-temp'>{data.current.temp.toFixed()}&#8451;</h1>
+        : null }
        </div>
        
       
@@ -96,8 +98,8 @@ const options = {
         </p>
        <p className='country'>United Kingdom, {data.timezone}</p>
         
-       <p id='date-time'>
-     </p> 
+       <p id='date-time'></p> 
+    
        
        </div>
 </div>
@@ -125,10 +127,10 @@ const options = {
 
 
 
-              <div className='graph' >
+              <div className='graph'>
                 <h1 className='city-name'>London
                 <img className='burger-icon' src="https://img.icons8.com/external-tanah-basah-basic-outline-tanah-basah/24/FFFFFF/external-open-menu-essentials-tanah-basah-basic-outline-tanah-basah.png"/></h1>
-                {data.current ?<p className='current-temp'>{data.current.temp}&#8451;</p> :null}
+                {data.current ?<p className='current-temp'>{data.current.temp.toFixed()}&#8451;</p> :null}
 
                 <LineChart chartdata={WeatherData} options={options}/>
 
@@ -145,37 +147,37 @@ const options = {
                 <ul>
                    <li id='day'><p>Fri</p>
                      <img id='img1' src='http://openweathermap.org/img/wn/04d@2x.png' width="50" height="50" ></img>
-                     {data.daily ? <p id='day-temp'>{data.daily[1].temp.day}&#8451;</p> :null}
+                     {data.daily ? <p id='day-temp'>{data.daily[1].temp.min.toFixed()} - {data.daily[1].temp.max.toFixed()} &#8451;</p> :null}
                     </li> 
 
                   <li id='day'><p>Sat</p>
                   <img id='img2'  src='http://openweathermap.org/img/wn/04d@2x.png' width="50" height="50" ></img>
-                  { data.daily ? <p id='day-temp'>{data.daily[2].temp.day}&#8451;</p> : null}
+                  { data.daily ? <p id='day-temp'>{data.daily[2].temp.min.toFixed()} - {data.daily[2].temp.max.toFixed()}&#8451;</p> : null}
                   </li>
 
                   <li id='day'><p>Sun</p>
                     <img id='img3' src='http://openweathermap.org/img/wn/04d@2x.png' width="50" height="50" ></img>
-                    {data.daily ? <p id='day-temp'>{data.daily[3].temp.day}</p> :null}
+                    {data.daily ? <p id='day-temp'>{data.daily[3].temp.min.toFixed()} - {data.daily[3].temp.max.toFixed()}&#8451;</p> :null}
                     </li>
 
                   <li id='day'><p>Mon</p>
                     <img id='img4' src='http://openweathermap.org/img/wn/03d@2x.png' width="50" height="50" ></img>
-                    {data.daily ? <p id='day-temp'>{data.daily[4].temp.day}&#8451;</p>:null}
+                    {data.daily ? <p id='day-temp'>{data.daily[4].temp.min.toFixed()} - {data.daily[4].temp.max.toFixed()}&#8451;</p>:null}
                     </li> 
 
                   <li id='day'><p>Tue</p>
                     <img id='img5' src='http://openweathermap.org/img/wn/10d@2x.png' width="50" height="50" ></img>
-                    {data.daily ? <p id='day-temp'>{data.daily[5].temp.day}&#8451;</p>:null}
+                    {data.daily ? <p id='day-temp'>{data.daily[5].temp.min.toFixed()} - {data.daily[5].temp.max.toFixed()}&#8451;</p>:null}
                     </li>
 
                   <li id='day'><p>Wed</p>
                     <img id='img6' src='http://openweathermap.org/img/wn/02d@2x.png' width="50" height="50" ></img>
-                    {data.daily ? <p id='day-temp'>{data.daily[6].temp.day}&#8451;</p>:null}
+                    {data.daily ? <p id='day-temp'>{data.daily[6].temp.min.toFixed()} - {data.daily[6].temp.max.toFixed()}&#8451;</p>:null}
                     </li>
 
                   <li id='day'><p>Thu</p>
                   <img id='img7' src='http://openweathermap.org/img/wn/03d@2x.png' width="50" height="50" ></img>
-                  {data.daily ? <p id='day-temp'>{data.daily[7].temp.day}&#8451;</p>:null}
+                  {data.daily ? <p id='day-temp'>{data.daily[7].temp.min.toFixed()} - {data.daily[7].temp.max.toFixed()}&#8451;</p>:null}
                     </li>
                 </ul>
                 
