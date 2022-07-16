@@ -218,8 +218,3 @@ div.weather-info .seven-forecast .arrow-buttons button.nl {
     display: none;
   }
 }
-@media screen and (min-width: 0px) and (max-width: 600) {
-  .weather-info {
-    display: block;
-  }
-}
