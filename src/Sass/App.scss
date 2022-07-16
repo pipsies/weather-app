@@ -7,6 +7,7 @@ body {
     background-position: center;
     margin: 0;
     background-attachment: fixed;
+   
 
     
 }
@@ -18,6 +19,7 @@ body {
     font-family: u.$font;
     margin-left: u.em(55);
     width: u.em(500);
+   
     
 
    
@@ -79,6 +81,7 @@ body {
         margin-bottom: u.em(100);
         margin-top: u.em(-3);
         opacity: 0.8;
+        font-size: u.em(15);
     }
 
     #date-time {
@@ -103,7 +106,7 @@ body {
 div.weather-info {
     font-family: u.$font;
     background-color: black;
-    height: u.em(900);
+    min-height: u.em(910);
     width: u.em(550);
     float: right;
     background: rgba(0, 0, 0, 0.6);
@@ -141,6 +144,8 @@ div.weather-info {
         border-bottom-style: solid;
         border-bottom-width: u.em(1);
         border-bottom-color: hsla(0, 0%, 100%, 0.639);
+        font-size: u.em(15);
+        
         
         
         p {
@@ -149,7 +154,7 @@ div.weather-info {
             font-weight: 100;
             margin-right: u.em(70);
             margin-bottom: u.em(10);
-            font-size: u.em(14);
+            font-size: u.em(15);
             cursor: pointer;
             
             
@@ -225,6 +230,7 @@ div.weather-info {
                 width: u.em(50);
                 height: u.em(130);
                 margin-bottom: u.em(20);
+                font-size: u.em(11);
             }
 
 
@@ -235,7 +241,7 @@ div.weather-info {
             margin-top: u.em(60);
             padding-right: u.em(30);
             padding-left: u.em(30);
-            margin-bottom: u.em(28);
+            margin-bottom: u.em(75);
             
 
             li {

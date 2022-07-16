@@ -50,6 +50,7 @@ body {
   margin-bottom: 6.25em;
   margin-top: -0.1875em;
   opacity: 0.8;
+  font-size: 0.9375em;
 }
 .left-info #date-time {
   margin-top: 0;
@@ -66,7 +67,7 @@ body {
 div.weather-info {
   font-family: "Albert Sans", sans-serif;
   background-color: black;
-  height: 56.25em;
+  min-height: 56.875em;
   width: 34.375em;
   float: right;
   background: rgba(0, 0, 0, 0.6);
@@ -98,6 +99,7 @@ div.weather-info .buttons {
   border-bottom-style: solid;
   border-bottom-width: 0.0625em;
   border-bottom-color: hsla(0deg, 0%, 100%, 0.639);
+  font-size: 0.9375em;
 }
 div.weather-info .buttons p {
   margin-left: 2.1875em;
@@ -105,7 +107,7 @@ div.weather-info .buttons p {
   font-weight: 100;
   margin-right: 4.375em;
   margin-bottom: 0.625em;
-  font-size: 0.875em;
+  font-size: 0.9375em;
   cursor: pointer;
 }
 div.weather-info .buttons .wind {
@@ -152,6 +154,7 @@ div.weather-info .seven-forecast #day {
   width: 3.125em;
   height: 8.125em;
   margin-bottom: 1.25em;
+  font-size: 0.6875em;
 }
 div.weather-info .seven-forecast ul {
   display: flex;
@@ -159,7 +162,7 @@ div.weather-info .seven-forecast ul {
   margin-top: 3.75em;
   padding-right: 1.875em;
   padding-left: 1.875em;
-  margin-bottom: 1.75em;
+  margin-bottom: 4.6875em;
 }
 div.weather-info .seven-forecast ul li {
   color: white;
